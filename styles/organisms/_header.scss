@@ -1,0 +1,35 @@
+@use '../settings/variables';
+
+.g-header {
+	display: flex;
+	grid-area: header;
+	color: red;
+	transform: translateY(-20rem);
+	animation-name: header;
+	animation-duration: 500ms;
+	animation-timing-function: ease-in-out;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+
+	&__img {
+		width: 5.2rem;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding-inline-start: variables.$space-20;
+	}
+
+	&__links-container {
+		display: flex;
+		justify-content: space-evenly;
+		width: 45.2rem;
+	}
+
+	&__link {
+		font-weight: variables.$weight-light;
+		color: variables.$text-red-color;
+	}
+}

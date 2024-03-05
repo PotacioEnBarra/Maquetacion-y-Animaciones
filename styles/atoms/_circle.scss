@@ -1,0 +1,11 @@
+@use '../settings/variables';
+
+.a-circle {
+	width: variables.$space-10;
+	height: variables.$space-10;
+	border-radius: variables.$border-radius-circle;
+
+	&--yellow {
+		background-color: variables.$background-yellow-color;
+	}
+}

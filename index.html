@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Una página de LEGO con animaciones" />
+		<meta name="robots" content="index,follow" />
+		<meta property="og:url" content="https://galeedgutierrez.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Galeed Gutierrez" />
+		<meta
+			property="og:description"
+			content="Una página de LEGO con animaciones"
+		/>
+		<meta property="og:title" content="Galeed Gutierrez" />
+		<meta
+			property="og:image"
+			content="https://github.com/GaleedGutierrez/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/raw/main/assets/readme/screenshot.webp"
+		/>
+		<meta property="og:image:alt" content="Imagen del proyecto" />
+		<meta property="og:image:width" content="1022" />
+		<meta property="og:image:height" content="570" />
+		<meta property="og:locale" content="es_ES" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Galeed Gutierrez" />
+		<meta
+			name="twitter:description"
+			content="Una página de LEGO con animaciones"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://github.com/GaleedGutierrez/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/raw/main/assets/readme/screenshot.webp"
+		/>
+		<meta name="twitter:site" content="@galeedgutierrez" />
+		<meta name="twitter:creator" content="@galeedgutierrez" />
+		<meta name="title" content="LEGO" />
+		<link rel="icon" type="image/ico" href="./assets/proyect/favicon.ico" />
+		<title>LEGO</title>
+	</head>
+	<body class="g-page">
+		<header class="g-header">
+			<nav class="g-header__nav">
+				<figure class="g-header__img">
+					<img
+						src="./assets/proyect/lego-logo.webp"
+						alt="Logo de Lego"
+						title="Logo de Lego"
+					/>
+				</figure>
+				<ul class="g-header__links-container">
+					<li>
+						<a class="g-header__link" href="">EXCLUSIVOS</a>
+					</li>
+					<li>
+						<a class="g-header__link" href="">NUEVOS</a>
+					</li>
+					<li>
+						<a class="g-header__link" href="">GIFT CARDS</a>
+					</li>
+					<li>
+						<a class="g-header__link" href="">FIND A STORE</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="g-main-content">
+			<h1 class="g-main-content__title">Súper Héroe</h1>
+			<h2 class="g-main-content__subtitle">Diseña tu</h2>
+			<p class="g-main-content__description">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+				mollitia magni obcaecati nemo at iure commodi eos, neque dolore
+				similique corporis. Tempore aut laborum doloribus sed asperiores
+				exercitationem neque perferendis!
+			</p>
+		</main>
+
+		<aside class="g-side-content">
+			<div class="g-side-content__box"></div>
+			<h2 class="g-side-content__title">Superman</h2>
+			<figure class="g-side-content__img">
+				<img
+					src="./assets/proyect/super-man.webp"
+					alt="Superman realizado con legos"
+					title="Superman hecho de legos"
+				/>
+			</figure>
+		</aside>
+
+		<!-- Loader -->
+		<section class="g-loader">
+			<div class="a-circle g-loader__circle a-circle--yellow"></div>
+			<div class="a-circle g-loader__circle a-circle--yellow"></div>
+			<div class="a-circle g-loader__circle a-circle--yellow"></div>
+		</section>
+
+		<!-- Modal -->
+		<section id="modal" class="g-modal hidden">
+			<article class="g-modal__content">
+				<button id="button-close" class="g-modal__btn-close">
+					<figure>
+						<img
+							src="./assets/proyect/close-icon.webp"
+							alt="Botón de cerrar card"
+						/>
+					</figure>
+				</button>
+				<div class="g-modal__slider">
+					<form action="" class="g-modal__form">
+						<input
+							type="radio"
+							name="slider"
+							value="slider-1"
+							id="slider-1"
+							class="g-modal__input no-visible"
+							checked
+						/>
+						<input
+							type="radio"
+							name="slider"
+							id="slider-2"
+							class="g-modal__input no-visible"
+							value="slider-2"
+						/>
+						<input
+							type="radio"
+							name="slider"
+							class="g-modal__input no-visible"
+							id="slider-3"
+							value="slider-3"
+						/>
+						<div class="g-modal__cards">
+							<label for="slider-1">
+								<figure class="g-modal__card" id="card-1">
+									<img
+										class="g-modal__img"
+										src="./assets/proyect/spider-man-1.webp"
+										alt="Spiderman volando"
+										title="Spiderman volando"
+									/>
+								</figure>
+							</label>
+							<label for="slider-2">
+								<figure class="g-modal__card" id="card-2">
+									<img
+										class="g-modal__img"
+										src="./assets/proyect/spider-man-2.webp"
+										alt="Spiderman con escudo"
+										title="Spiderman con escudo"
+									/>
+								</figure>
+							</label>
+							<label for="slider-3">
+								<figure class="g-modal__card" id="card-3">
+									<img
+										class="g-modal__img"
+										src="./assets/proyect/spider-man-3.webp"
+										alt="Spiderman parado"
+										title="Spiderman parado"
+									/>
+								</figure>
+							</label>
+						</div>
+					</form>
+				</div>
+				<button class="g-modal__btn-i-want-it">¡Lo quiero!</button>
+			</article>
+		</section>
+
+		<footer class="g-footer">
+			<ul class="g-footer__characters">
+				<li class="g-footer__list">
+					<button class="g-footer__btn button-hero">
+						<figure class="g-footer__img-container">
+							<img
+								class="g-footer__img"
+								src="./assets/proyect/spiderman.webp"
+								alt="Spiderman hecho de legos"
+								title="Spiderman hecho de legos"
+							/>
+						</figure>
+					</button>
+				</li>
+				<li class="g-footer__list">
+					<button class="g-footer__btn button-hero">
+						<figure class="g-footer__img-container">
+							<img
+								class="g-footer__img"
+								src="./assets/proyect/robin.webp"
+								alt="Robin hecho de legos"
+								title="Robin hecho de legos"
+							/>
+						</figure>
+					</button>
+				</li>
+				<li class="g-footer__list">
+					<button class="g-footer__btn button-hero">
+						<figure class="g-footer__img-container">
+							<img
+								class="g-footer__img"
+								src="./assets/proyect/batman.webp"
+								alt="Batman hecho de legos"
+								title="Batman hecho de legos"
+							/>
+						</figure>
+					</button>
+				</li>
+			</ul>
+		</footer>
+		<script type="module" src="./src/index.ts"></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"url": "https://galeedgutierrez.com/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/dist/",
+				"name": "LEGO",
+				"about": {
+					"description": "Una página de LEGO con animaciones",
+					"image": "https://github.com/GaleedGutierrez/Curso-Practico-de-Maquetacion-y-Animaciones-con-CSS-2021/raw/main/assets/readme/screenshot.webp"
+				}
+			}
+		</script>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-M8H4YB694S"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-M8H4YB694S');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+@use '../settings/variables';
+
+.g-main-content {
+	display: flex;
+	grid-area: main;
+	flex-direction: column;
+	justify-content: center;
+	padding-inline-start: variables.$space-20;
+	transform: translateY(-60rem);
+	animation: main-content 2.5s 500ms ease-in-out forwards;
+
+	&__title {
+		order: 2;
+		margin-block-end: variables.$space-7;
+	}
+
+	&__subtitle {
+		order: 1;
+		margin-block-end: calc(variables.$space-3 * -1);
+		margin-inline-start: variables.$space-11;
+		font-weight: variables.$weight-light;
+	}
+
+	&__description {
+		order: 2;
+	}
+}

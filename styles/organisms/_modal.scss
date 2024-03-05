@@ -1,0 +1,113 @@
+@use '../settings/variables';
+
+$pure-black: variables.$pure-black;
+
+.g-modal {
+	position: absolute;
+	z-index: variables.$z-index-1-block-group;
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+	background: rgba($pure-black, 50%);
+
+	&__content {
+		display: grid;
+		grid-template-rows: min-content 1fr min-content;
+		place-items: center;
+		width: 50%;
+		height: 50%;
+		padding: variables.$space-10;
+		border-radius: variables.$border-radius-6;
+		background-color: variables.$background-lightest-color;
+	}
+
+	&__btn-close {
+		justify-self: flex-end;
+		align-self: flex-start;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+
+	&__slider {
+		width: 30rem;
+		height: 20rem;
+		transform-style: preserve-3d;
+	}
+
+	&__form {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__input {
+		position: absolute;
+	}
+
+	&__cards {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__card {
+		position: absolute;
+		left: 0;
+		right: 0;
+		place-items: center;
+		width: 50%;
+		height: 100%;
+		padding: variables.$space-3;
+		margin-inline: auto;
+		background-color: variables.$background-yellow-color;
+		transition: transform 500ms ease;
+		cursor: pointer;
+	}
+
+	&__img {
+		object-fit: cover;
+	}
+
+	#slider-1:checked ~ &__cards #card-1,
+	#slider-2:checked ~ &__cards #card-2,
+	#slider-3:checked ~ &__cards #card-3 {
+		z-index: variables.$z-index-1-app-image-dropdown;
+		opacity: 1;
+		transform: translateX(0) scale(1);
+	}
+
+	#slider-1:checked ~ &__cards #card-2,
+	#slider-2:checked ~ &__cards #card-3,
+	#slider-3:checked ~ &__cards #card-1 {
+		z-index: variables.$z-index-initial;
+		opacity: 0.5;
+		transform: translateX(40%) scale(0.8);
+	}
+
+	#slider-1:checked ~ &__cards #card-3,
+	#slider-2:checked ~ &__cards #card-1,
+	#slider-3:checked ~ &__cards #card-2 {
+		z-index: variables.$z-index-initial;
+		opacity: 0.5;
+		transform: translateX(-40%) scale(0.8);
+	}
+
+	&__btn-i-want-it {
+		padding: variables.$space-3;
+		border: none;
+		border-radius: variables.$border-radius-2;
+		background-color: variables.$background-blue-color;
+		font-size: variables.$fs-title-3xl;
+		color: variables.$text-light-color;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgb(variables.$background-blue-color, 90%);
+		}
+
+		&:active {
+			background-color: rgb(variables.$background-blue-color, 60%);
+		}
+	}
+}
